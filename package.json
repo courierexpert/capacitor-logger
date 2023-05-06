@@ -40,7 +40,7 @@
     "prepare": "husky install",
     "prerelease": "scripts/ensure-clean.sh && pnpm build",
     "release": "commit-and-tag-version && git push --follow-tags && pnpm publish",
-    "test": "cd android "
+    "test": "cd android"
   },
   "commit-and-tag-version": {
     "scripts": {

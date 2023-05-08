@@ -38,7 +38,7 @@
     "verify.ios": "cd ios && pod install && xcodebuild -workspace Plugin.xcworkspace -scheme Plugin -quiet && cd ..",
     "verify.android": "cd android && ./gradlew clean build test && cd ..",
     "verify": "pnpm verify.ios && pnpm verify.android",
-    "prepare": "husky install",
+    "prepare": "cd ../../ && husky install",
     "prerelease": "scripts/ensure-clean.sh && pnpm build",
     "release": "commit-and-tag-version && git push --follow-tags && pnpm publish",
     "test": "cd android"
@@ -66,7 +66,7 @@
   "swiftlint": "@ionic/swiftlint-config",
   "repository": {
     "type": "git",
-    "url": "https://github.com/aparajita/capacitor-logger.git"
+    "url": "https://github.com/courierexpert/capacitor-logger.git"
   },
   "bugs": {
     "url": "https://github.com/aparajita/capacitor-logger/issues"
